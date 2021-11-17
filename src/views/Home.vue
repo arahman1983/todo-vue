@@ -1,13 +1,15 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <p>To Do App</p>
+    <todo-element></todo-element>
   </div>
 </template>
 
 <script>
+import TodoElement from "@/components/TodoElement.vue";
 export default {
   name: "Home",
-  components: {},
+  components: {
+    TodoElement,
+  },
 };
 </script>
